@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="connect()">
+<div id="wrapper">
+    <div id="menu">
+        <p class="welcome">Welcome to chat<b></b></p>
+        <h5 id="nickName"></h5>
+
+    </div>
+    <div id="chatbox">
+        <p id="response"></p>
+    </div>
+    <label>Your message:</label>
+    <input id="messageToSend" type="text">
+
+
+    <button onclick="sendMessage()"  id="submitmsg">Send</button>
+
+
+</div>
+
+<script src="js.js"></script>
+<script src="stomp.js"></script>
+</body>
+</html>
